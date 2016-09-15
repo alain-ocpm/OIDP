@@ -33,6 +33,10 @@
 // The theme will have compilation errors if Foundation is not imported.
 
 // Global Zurb Foundation variable overrides.
+@import "base/variables";
+@import "base/colors";
+@import "settings";
+@import "base/typography";
 @import "base/init";
 
 // Comment out this import if you don't want to use normalize.
@@ -103,10 +107,13 @@
 @import "layout/main";
 @import "layout/aside";
 @import "layout/footer";
+@import "layout/speakers";
 
 // Modules
 // @import "modules/block";
-// @import "modules/button";
+@import "modules/topbar";
+@import "modules/table";
+@import "modules/orbitslider";
 
 // States
 // @import "states/collapse";

@@ -1,0 +1,17 @@
+.l-orbitslider {
+  overflow: hidden;
+
+  .orbit-slide-number {
+    display: none;
+  }
+}
+
+@media #{$large-up} {
+  .l-orbitslider {
+    .orbit-caption {
+      bottom: 20px !important;
+      right: 40px;
+      width: 33% !important;
+    }
+  }
+}
