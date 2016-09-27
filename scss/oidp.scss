@@ -34,8 +34,8 @@
 
 // Global Zurb Foundation variable overrides.
 @import "base/variables";
-@import "base/colors";
 @import "settings";
+@import "base/colors";
 @import "base/typography";
 @import "base/init";
 
@@ -108,11 +108,13 @@
 @import "layout/aside";
 @import "layout/footer";
 @import "layout/speakers";
+@import "layout/gallery";
 
 // Modules
 // @import "modules/block";
 @import "modules/topbar";
 @import "modules/table";
+@import "modules/form";
 @import "modules/orbitslider";
 
 // States

@@ -1,0 +1,67 @@
+// Non-modular or client styles for .l-footer region.
+
+.l-footer {
+  h1, h2, h3, h4, h5, h6, p {
+    color: white;
+  }
+
+  .row {
+    padding-bottom: 25px;
+  }
+
+  .footer-social {
+    font-family: "foundation-icons";
+    font-size: 2.5rem;
+    letter-spacing: -0.125rem;
+    list-style: none;
+    margin: 0;
+
+    .footer-social-link {
+      color: $tangerine;
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    .footer-social-item {
+      display: inline;
+    }
+  }
+
+  .footer-coord {
+    hr {
+      border: solid 1px $tangerine;
+    }
+  }
+
+  .footer-bottom {
+    padding: 25px 0;
+  }
+}
+
+@media #{$large-up} {
+  .l-footer {
+    .footer-social {
+      font-size: 2.5rem;
+      list-style: none;
+      margin: 0;
+      text-align: left;
+    }
+
+    .footer-coord {
+      text-align: left;
+
+      p {
+        margin-bottom: 0;
+        line-height: 1.25rem;
+      }
+    }
+
+    .footer-bottom {
+      padding: 60px 0;
+    }
+
+  }
+}

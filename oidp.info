@@ -28,6 +28,7 @@ base theme = zurb_foundation
 
 ; Load files for custom font faces:
 stylesheets[all][] = fonts/roboto/roboto.css
+stylesheets[all][] = fonts/foundation-icons/foundation-icons.css
 
 ; For CSS users, load the oidp.css file:
 stylesheets[all][] = css/oidp.css
