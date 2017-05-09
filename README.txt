@@ -8,7 +8,7 @@ https://www.drupal.org/project/zurb_foundation
 Pour la génération du thème, npm est requis. Les instructions d'installation
 sont disponible à https://www.npmjs.com/
 
-Une fois zurb-foundation et npmsont installé, saisir dans l'invite de commande
+Une fois zurb-foundation et npm installés, saisir dans l'invite de commande
 "npm install". Il est important de ne PAS utiliser "npm update" car les
 fonctions de préporcesseurs du thème Drupal dépendent de version très précises
 de certain modules (déjà configurés dans package.json)
