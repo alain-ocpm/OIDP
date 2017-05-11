@@ -1,4 +1,13 @@
-(function($) {
+$(document).ready(function(){
+  $(document).foundation();
+  $(".tabs-content-slide-rail").slick();
+});
+
+
+
+
+
+/*(function($) {
   //Fade In Effect
   var fadeIn = function() {
     $("body").css("opacity", "0");
@@ -32,4 +41,4 @@
   }
 
   $(document).ready(init);
-})(jQuery)
+})(jQuery)*/

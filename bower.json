@@ -3,5 +3,8 @@
   "private": "true",
   "dependencies": {
     "foundation": "zurb/bower-foundation"
+  },
+  "devDependencies": {
+    "slick-carousel": "^1.6.0"
   }
 }
