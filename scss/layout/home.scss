@@ -66,6 +66,10 @@
 
     .tabpanel-text {
       padding: 0 24px;
+
+      li {
+        margin-bottom: 5px;
+      }
     }
 
     &:nth-child(1) {.tabs-content-slider {background: $mustard}}
