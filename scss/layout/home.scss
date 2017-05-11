@@ -1,70 +1,184 @@
-@media #{$medium-up} {
-  .front {
-    .home-card {
-      background: $charcoal;
+.front {
+  .home-card {
+    background: $charcoal;
+    margin-bottom: 24px;
 
-      &>div {
-        padding: 24px 0;
+    &>div {
+      padding: 24px 0;
+    }
+  }
+
+  .tab-title {
+    text-align: center;
+    width: 25%;
+  }
+
+  .active {
+    a[role=tab] {
+      background: $ghost !important;
+    }
+  }
+
+  .tab-title:nth-child(1) {
+    a[role=tab] {
+      background: darken($mustard,5%);
+
+      &:hover {
+        background: $mustard;
       }
     }
+  }
 
+  .tab-title:nth-child(2) {
+    a[role=tab] {
+      background: darken($sky,5%);
+
+      &:hover {
+        background: $sky;
+      }
+    }
+  }
+
+  .tab-title:nth-child(3) {
+    a[role=tab] {
+      background: darken($leaf,5%);
+
+      &:hover {
+        background: $leaf;
+      }
+    }
+  }
+
+  .tab-title:nth-child(4) {
+    a[role=tab] {
+      background: darken($tangerine,5%);
+
+      &:hover {
+        background: $tangerine;
+      }
+    }
+  }
+
+  section[role=tabpanel] {
+    h2 {
+      text-align: center;
+    }
+
+    .tabpanel-text {
+      padding: 0 24px;
+    }
+
+    &:nth-child(1) {.tabs-content-slider {background: $mustard}}
+    &:nth-child(2) {.tabs-content-slider {background: $sky}}
+    &:nth-child(3) {.tabs-content-slider {background: $leaf}}
+    &:nth-child(4) {.tabs-content-slider {background: $tangerine}}
+  }
+
+  .tabs-content {
+    background: $ghost;
+    box-shadow: 0px 15px 15px -5px black;
+
+    .content {
+      padding: 0;
+    }
+  }
+
+  //Slick
+
+  .tabs-content-slider {
+    padding: 12px 0 24px 0;
+
+    h3 {
+      color: white;
+    }
+  }
+
+  .slick-list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: block;
+    position: relative;
+    top: 0; left: 0;
+  }
+
+  .slick-initialized .slick-slide {
+    display: block;
+  }
+
+  .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.25s;
+
+    p {
+      color: white;
+      font-weight: bold;
+      padding-top: 5px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .slick-prev, .slick-next {
+    background: transparent;
+    border: none;
+    font-size: 0;
+    line-height: 0;
+    margin: -10px;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+
+    &::before {
+      content: "\f198";
+      font-family: "foundation-icons";
+      font-size: 30px;
+      line-height: 1;
+    }
+  }
+
+  .slick-prev {
+    left: -15px;
+    transform: scaleX(-1);
+  }
+
+  .slick-next {
+    right: -15px;
+  }
+}
+
+@media #{$medium-up} {
+  .front {
     .vertical-tabs {
       float: left;
       margin: 0 0 1.25rem;
       max-width: 20%;
+      position: relative;
       width: 20%;
+      z-index: 1;
 
       .tab-title {
         display: block;
         float: none;
         position: inherit;
         top: auto;
-      }
-    }
-
-    .active {
-      a[role=tab] {
-        background: $ghost !important;
-      }
-    }
-
-    .tab-title:nth-child(1) {
-      a[role=tab] {
-        background: darken($mustard,5%);
-
-        &:hover {
-          background: $mustard;
-        }
-      }
-    }
-
-    .tab-title:nth-child(2) {
-      a[role=tab] {
-        background: darken($sky,5%);
-
-        &:hover {
-          background: $sky;
-        }
-      }
-    }
-
-    .tab-title:nth-child(3) {
-      a[role=tab] {
-        background: darken($leaf,5%);
-
-        &:hover {
-          background: $leaf;
-        }
-      }
-    }
-
-    .tab-title:nth-child(4) {
-      a[role=tab] {
-        background: darken($tangerine,5%);
-
-        &:hover {
-          background: $tangerine;
-        }
+        width: 100%;
       }
     }
 
@@ -73,29 +187,31 @@
     }
 
     .tabs-content {
-      background: $ghost;
-      box-shadow: 0px 15px 15px -5px black;
-
-      .content {
-        padding: 0;
-      }
+      position: relative;
 
       section[role=tabpanel] {
         float: right;
         max-width: 80%;
+        width: 80%;
+
+        h2 {
+          text-align: left;
+        }
 
         .tabs-content-slider {
-          bottom: 48px;
+          bottom: 0;
           position: absolute;
           max-width: 80%;
           width: 80%;
         }
-
-        &:nth-child(1) {.tabs-content-slider {background: $mustard}}
-        &:nth-child(2) {.tabs-content-slider {background: $sky}}
-        &:nth-child(3) {.tabs-content-slider {background: $leaf}}
-        &:nth-child(4) {.tabs-content-slider {background: $tangerine}}
       }
     }
+
+    //slick
+
+    .tabs-content-slider {
+      padding: 0 0 12px 0;
+    }
+
   }
 }

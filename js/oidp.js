@@ -1,6 +1,9 @@
 $(document).ready(function(){
   $(document).foundation();
-  $(".tabs-content-slide-rail").slick();
+  $(".tabs-content-slide-rail").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1
+  });
 });
 
 
