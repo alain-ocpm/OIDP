@@ -3,6 +3,7 @@ module.exports = function(grunt) {
 
   var theme_name = 'oidp';
   var base_theme_path = '../zurb_foundation';
+  var bower_components = '/bower_components/';
 
   var global_vars = {
     theme_name: theme_name,
@@ -11,12 +12,15 @@ module.exports = function(grunt) {
     base_theme_path: base_theme_path
   };
 
+  //grunt.log.write('../zurb_foundation');
+
   var bourbon = require('node-bourbon').includePaths;
 
   // array of javascript libraries to include.
   var jsLibs = [
     '<%= global_vars.base_theme_path %>/js/vendor/placeholder.js',
-    '<%= global_vars.base_theme_path %>/js/vendor/fastclick.js'
+    '<%= global_vars.base_theme_path %>/js/vendor/fastclick.js',
+    'bower_components/slick-carousel/slick/slick.js'
   ];
 
   // array of foundation javascript components to include.
