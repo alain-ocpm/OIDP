@@ -10,7 +10,7 @@ sont disponible à https://www.npmjs.com/
 
 Une fois zurb-foundation et npm installés, saisir dans l'invite de commande
 "npm install". Il est important de ne PAS utiliser "npm update" car les
-fonctions de préporcesseurs du thème Drupal dépendent de version très précises
+fonctions de préprocesseurs du thème Drupal dépendent de version très précises
 de certain modules (déjà configurés dans package.json)
 
 Génération du thème
